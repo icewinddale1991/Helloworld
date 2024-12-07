@@ -106,6 +106,4 @@ public class Main {
         var DividedBetweenEmployees = (TotalHors / EmployeesWithVisitors);
         System.out.println("Если в компании работает " + EmployeesWithVisitors + " человек, то всего " + DividedBetweenEmployees + " часа работы может быть поделено между сотрудниками");
     }
-
-
 }
