@@ -1,6 +1,6 @@
 
 public class Main {
-    public static void Мain(String[] args) {
+    public static void main(String[] args) {
         task1();
         task2();
         task3();
