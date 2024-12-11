@@ -16,7 +16,7 @@ public class Main {
         byte apple = 12;
         short money = 27594;
         int cash = 2147483646;
-        long galaxy = 337922203987456l;
+        long galaxy = 337922203987456L;
         float part = 0.75f;
         double morepart = 5.358;
 
@@ -32,7 +32,7 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         float a = 27.12f;
-        long b = 987678965549l;
+        long b = 987678965549L;
         double c =2.786;
         short d = 569;
         short e = -159;
@@ -43,72 +43,72 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        byte LydmilaPavlovna = 23;
-        byte AnnaSergeevna = 27;
-        byte EkatreinaAndreevna = 30;
-        short TotalPaper = 480;
-        int StudentHavePapers = TotalPaper / (LydmilaPavlovna + AnnaSergeevna+ EkatreinaAndreevna);
-        System.out.println("На каждого ученика расчитано " + StudentHavePapers + " листов бумаги" );
+        byte lydmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekatreinaAndreevna = 30;
+        short totalPaper = 480;
+        int paperLeft = (lydmilaPavlovna + annaSergeevna+ ekatreinaAndreevna);
+        System.out.println("На каждого ученика расчитано " + paperLeft + " листов бумаги" );
         System.out.println();
     }
     public static void task4() {
         System.out.println("Задача 4");
-        byte MachinePerfomancePerTwoMinutes = 16;
-        byte HoursPerDay = 24;
-        int PerfomancePer20Minutes = (MachinePerfomancePerTwoMinutes * 10);
-        int PerfomancePerHours = (MachinePerfomancePerTwoMinutes * 30);
-        int PerfomancePerDay = (PerfomancePerHours * HoursPerDay);
-        int HoursPerThreeDays = (HoursPerDay * 3);
-        int PerfomancePerThreeDays = (PerfomancePerHours * HoursPerThreeDays);
-        int PerfomancePerMonth = (PerfomancePerDay * 30);
-        System.out.println("За 20 минут машина произвела " + PerfomancePer20Minutes+ " штук бутылок" );
-        System.out.println("За 1 день машина произвела " + PerfomancePerDay + " штук бутылок" );
-        System.out.println("За 3 дня машина произвела " + PerfomancePerThreeDays+ " штук бутылок" );
-        System.out.println("За месяц машина произвела " + PerfomancePerMonth + " штук бутылок" );
+        byte perfomancePerTwoMinutes = 16;
+        byte hoursPerDay = 24;
+        int perfomancePer20Minutes = (perfomancePerTwoMinutes * 10);
+        int perfomancePerHours = (perfomancePerTwoMinutes * 30);
+        int perfomancePerDay = (perfomancePer20Minutes * hoursPerDay);
+        int hoursPerThreeDays = (hoursPerDay * 3);
+        int perfomancePerThreeDays = (perfomancePerHours * hoursPerThreeDays);
+        int perfomancePerMonth = (perfomancePerThreeDays * 30);
+        System.out.println("За 20 минут машина произвела " + perfomancePerMonth+ " штук бутылок" );
+        System.out.println("За 1 день машина произвела " + perfomancePerHours + " штук бутылок" );
+        System.out.println("За 3 дня машина произвела " + perfomancePerDay+ " штук бутылок" );
+        System.out.println("За месяц машина произвела " + perfomancePer20Minutes + " штук бутылок" );
         System.out.println();
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        byte TotalCansOfPaint =120;
-        byte WhitePaintOnTheRoom =2;
-        byte BrownPaintOnTheRoom =4;
-        int TotalCansForTheRoom = (WhitePaintOnTheRoom + BrownPaintOnTheRoom);
-        int TotalClassesInTheSchool = (TotalCansOfPaint / TotalCansForTheRoom);
-        int TotalWhitePaint = (TotalClassesInTheSchool * WhitePaintOnTheRoom);
-        int TotalBrownPaint = (TotalClassesInTheSchool * BrownPaintOnTheRoom);
-        System.out.println("В школе где " +TotalClassesInTheSchool + " классов нужно " + TotalWhitePaint + " банок белой краски и " + TotalBrownPaint + " банок коричневой краски");
+        byte potalCansOfPaint =120;
+        byte whitePaintOnTheRoom =2;
+        byte brownPaintOnTheRoom =4;
+        int totalCansForTheRoom = (whitePaintOnTheRoom + brownPaintOnTheRoom);
+        int totalClassesInTheSchool = (brownPaintOnTheRoom  / totalCansForTheRoom);
+        int totalWhitePaint = (totalClassesInTheSchool * whitePaintOnTheRoom);
+        int totalBrownPaint = (totalClassesInTheSchool * brownPaintOnTheRoom);
+        System.out.println("В школе где " +totalClassesInTheSchool + " классов нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
         System.out.println();
 
     }
     public static void task6() {
         System.out.println("Задача 6");
-        byte Bananas = 80;
-        byte Milk = 105;
-        byte IceCream = 100;
-        byte Egg = 70;
-        int WeightBananas = Bananas * 5;
-        System.out.println("Вес бананов составляет " +WeightBananas+ " гр");
-        int WeightMilk = Milk * 2;
-        System.out.println("Вес молока составляет " +WeightMilk+ " гр.");
-        int WeightIceCream = IceCream *2;
-        System.out.println("Вес Мороженого составляет " +WeightIceCream+ " гр.");
-        int EggWeight = Egg * 4;
-        System.out.println("Вес яиц составляет " +EggWeight+ " гр.");
-        int TotalBreakFastWeight = WeightBananas + WeightMilk + WeightIceCream + EggWeight;
-        float TotalBreakFastWeightKg = (float) TotalBreakFastWeight/1000;
-        System.out.println("Общий вес завтрака " + TotalBreakFastWeightKg + " кг.");
+        byte bananas = 80;
+        byte milk = 105;
+        byte iceCream = 100;
+        byte egg = 70;
+        int weightBananas = bananas * 5;
+        System.out.println("Вес бананов составляет " +weightBananas+ " гр");
+        int weightMilk = milk * 2;
+        System.out.println("Вес молока составляет " +weightMilk+ " гр.");
+        int weightIceCream = iceCream *2;
+        System.out.println("Вес Мороженого составляет " +weightIceCream+ " гр.");
+        int eggWeight = egg * 4;
+        System.out.println("Вес яиц составляет " +eggWeight+ " гр.");
+        int totalBreakFastWeight = weightBananas + weightMilk + weightMilk + eggWeight;
+        float totalBreakFastWeightKg = (float) totalBreakFastWeight/1000;
+        System.out.println("Общий вес завтрака " + totalBreakFastWeightKg + " кг.");
         System.out.println();
     }
     public static void task7() {
         System.out.println("Задача 7");
-        short NeedLost = 7000;
-        short InDay = 250;
-        short InDayTwo = 500;
-        int ResultDay = NeedLost/InDay;
-        System.out.println("При потере " +InDay+ "гр потребуется " +ResultDay+ " дней");
-        int ResultDayTwo = NeedLost/InDayTwo;
-        System.out.println("При потере " +InDayTwo+ "гр потребуется " +ResultDayTwo+ " дней");
+        short needLost = 7000;
+        short inDay = 250;
+        short inDayTwo = 500;
+        int ResultDay = needLost/inDay;
+        System.out.println("При потере " +inDay+ "гр потребуется " +ResultDay+ " дней");
+        int ResultDayTwo = needLost/inDayTwo;
+        System.out.println("При потере " +inDayTwo+ "гр потребуется " +ResultDayTwo+ " дней");
         int OnAverageDay = (ResultDay+ResultDayTwo)/2;
         System.out.println("В среднем потребуется " +OnAverageDay+ " дней для похудения");
         System.out.println();
@@ -116,18 +116,18 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        int MariaPerYear = 67760 * 12;
-        int DenPerYear = 83690 * 12;
-        int KrisPerYear = 76230 * 12;
-        float MariaPerYearInc = (float) (MariaPerYear*1.1);
-        float DenPerYearInc = (float) (DenPerYear*1.1);
-        float KrisPerYearInc = (float) (KrisPerYear*1.1);
-        float MariaOverage = (MariaPerYearInc - MariaPerYear);
-        float DenOverage = (DenPerYearInc - DenPerYear);
-        float KrisOverage = (KrisPerYearInc - KrisPerYear);
-        System.out.println("Маша теперь получет "+MariaPerYearInc+" рублей доход вырос на "+MariaOverage);
-        System.out.println("Денис теперь получет "+DenPerYearInc+" рублей доход вырос на "+DenOverage);
-        System.out.println("Маша теперь получет "+KrisPerYearInc+" рублей доход вырос на "+KrisOverage);
+        int mariaPerYear = 67760 * 12;
+        int denPerYear = 83690 * 12;
+        int krisPerYear = 76230 * 12;
+        float mariaPerYearInc = (float) (mariaPerYear*1.1);
+        float denPerYearInc = (float) (denPerYear*1.1);
+        float krisPerYearInc = (float) (krisPerYear*1.1);
+        float mariaOverage = (mariaPerYearInc - mariaPerYear);
+        float denOverage = (denPerYearInc - denPerYear);
+        float krisOverage = (krisPerYearInc - krisPerYear);
+        System.out.println("Маша теперь получет "+mariaPerYearInc+" рублей доход вырос на "+mariaOverage);
+        System.out.println("Денис теперь получет "+denPerYearInc+" рублей доход вырос на "+denOverage);
+        System.out.println("Маша теперь получет "+krisPerYearInc+" рублей доход вырос на "+krisOverage);
 
 
 
