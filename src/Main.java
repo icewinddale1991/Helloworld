@@ -1,6 +1,6 @@
 
 public class Main {
-    public static void main(String[] args) {
+    public static void Мain(String[] args) {
         task1();
         task2();
         task3();
@@ -25,11 +25,11 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         var dog = 8.0;
-        dog = dog + 2;
+        dog = dog + 4;
         var cat = 3.6;
-        cat = cat + 2;
+        cat = cat + 4;
         var paper = 763789;
-        paper = paper + 2;
+        paper = paper + 4;
         System.out.println(dog);
         System.out.println(cat);
         System.out.println(paper);
@@ -77,10 +77,11 @@ public class Main {
         System.out.println("Вес первого боксёра " + WeighOfOneBoxer + " кг.");
         var SecondBoxersWeight = 82.7;
         System.out.println("Вес вторго боксера " + SecondBoxersWeight +" кг." );
-        var TotalWeightOfFighters = (WeighOfOneBoxer + SecondBoxersWeight);
-        System.out.println("Общий вес бойцов " + TotalWeightOfFighters + " кг.");
-        var WeightDifference = (SecondBoxersWeight - WeighOfOneBoxer);
-        System.out.println("Разница в весе двух бойцов составляет "+ WeightDifference +" кг." );
+        var TotalWeight = 82.7 + 78.2;
+        var DiffWeight = 82.7 % 78.2;
+        System.out.println("Общий вес бойцов " + TotalWeight + " кг.");
+        var WeightDiff = DiffWeight;
+        System.out.println("Разница в весе двух бойцов составляет "+ WeightDiff +" кг." );
         System.out.println();
     }
     public static void task7() {
