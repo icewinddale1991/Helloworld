@@ -70,7 +70,7 @@ public class Main {
 
     public static void task5() {
         System.out.println("Задача 5");
-        byte TpotalCansOfPaint =120;
+        byte TotalCansOfPaint =120;
         byte whitePaintOnTheRoom =2;
         byte brownPaintOnTheRoom =4;
         int totalCansForTheRoom = (whitePaintOnTheRoom + brownPaintOnTheRoom);
