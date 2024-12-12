@@ -1,110 +1,109 @@
 
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
-        task6();
-        task7();
-        task8();
+        taskOne();
+        taskTwo();
+        taskThree();
+        taskFour();
+        taskFive();
+        taskSix();
+        taskSeven();
     }
 
-    public static void task1() {
+    public static void taskOne() {
         System.out.println("Задача 1");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int age = 13;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " то он совершеннолетний ");
+        } else {
+            System.out.println("Если возраст человека равен " + age + " он не достиг совершеннолетия нужно немного подождать");
+        }
         System.out.println();
     }
 
-    public static void task2() {
+    public static void taskTwo() {
         System.out.println("Задача 2");
-        var dog = 8.0;
-        dog = dog + 4;
-        var cat = 3.6;
-        cat = cat + 4;
-        var paper = 763789;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int temperature = 18;
+        if (temperature < 5) {
+            System.out.println("На улице " + temperature + " градусов нужно надеть шапку");
+        }
+        if (temperature > 5) {
+            System.out.println("На улице " + temperature + " градусов можно идти без шапки");
+        }
         System.out.println();
     }
 
-    public static void task3() {
+    public static void taskThree() {
         System.out.println("Задача 3");
-        var dog = 8.0;
-        dog = dog - 3.5;
-        var cat = 3.6;
-        cat = cat - 1.6;
-        var paper = 763789;
-        paper = paper - 7639;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
-        System.out.println();
-    }
-    public static void task4() {
-        System.out.println("Задача 4");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend);
-        System.out.println();
-    }
-    public static void task5() {
-        System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog);
-        System.out.println();
-    }
-    public static void task6() {
-        System.out.println("Задача 6");
-        var WeighOfOneBoxer = 78.2;
-        System.out.println("Вес первого боксёра " + WeighOfOneBoxer + " кг.");
-        var SecondBoxersWeight = 82.7;
-        System.out.println("Вес вторго боксера " + SecondBoxersWeight +" кг." );
-        var TotalWeight = 82.7 + 78.2;
-        var DiffWeight = 82.7 % 78.2;
-        System.out.println("Общий вес бойцов " + TotalWeight + " кг.");
-        var WeightDiff = DiffWeight;
-        System.out.println("Разница в весе двух бойцов составляет "+ WeightDiff +" кг." );
-        System.out.println();
-    }
-    public static void task7() {
-        System.out.println("Задача 7");
-        var WeightOfOneBoxer = 78.2;
-        var SecondBoxersWeight = 82.7;
-        var TotalWeight = (WeightOfOneBoxer + SecondBoxersWeight);
-        var WeightDifference = (SecondBoxersWeight - WeightOfOneBoxer);
-        var overload = (WeightDifference + TotalWeight) % TotalWeight;
-        System.out.println("Разница в весе двух бойцов составляет " + WeightDifference + " или " + overload);
+        int speed = 45;
+        if (speed >60) {
+            System.out.println("Если скорость " + speed + " то придется заплатить штраф");
+        }
+        else {
+            System.out.println("Если скорость " + speed + " можно ездить спокойно");
+        }
         System.out.println();
     }
 
-    public static void task8() {
+    public static void taskFour() {
+        System.out.println("Задача 4");
+        int age =21;
+        if (age >=2 && age <=6) {
+            System.out.println("Если возраст человека равен " + age + " то ему можно ходить в детский сад");
+        }
+        else if (age >=7 && age <=18) {
+            System.out.println("Если возраст человека равен " + age+ " то ему можно ходить в школу");
+        }
+        if (age >18 && age <24) {
+            System.out.println("Если возраст человека равен " + age + " тоему нужно ходить в университет");
+        }
+         else {
+            System.out.println("Если возраст человека равен " + age + " то ему нужно хождить на работу");
+        }
+        System.out.println();
+    }
+
+    public static void taskFive() {
+        System.out.println("Задача 5");
+        int ageChild = 16;
+        if (ageChild <5) {
+            System.out.println("Если возраст ребёнка равен " +ageChild+  " он не может кататься на аттракционе");
+        }
+        else if (ageChild >5  && ageChild<14) {
+            System.out.println("Если возраст ребёнка равен " + ageChild + " Можно кататься на аттракционе в сопровождении взрослого");
+        }
+        else {
+            System.out.println("Если возраст ребёнка равен " +ageChild+ " можно кататься на аттракционе без сопровождения взрослого");
+        }
+        System.out.println();
+
+    }
+
+    public static void taskSix() {
+        System.out.println("Задача 6");
+        int carrigeCapacity = 60;
+        ;
+        if (carrigeCapacity >=102) {
+            System.out.println("Вагон полностью забит");
+        }
+        else if (carrigeCapacity > 0 && carrigeCapacity <60) {
+            System.out.println("В вагоне есть сидячие места");
+        }
+        if (carrigeCapacity >60 && carrigeCapacity<102) {
+            System.out.println("В вагоне остались стоячие места");
+        }
+    }
+
+
+
+
+    public static void taskSeven() {
+        System.out.println("Задача 7");
+
+    }
+
+    public static void taskEight() {
         System.out.println("Задача 8");
-        var TotalHors = 640;
-        var EveryEmployeeWorks = 8;
-        var TotalEmployees = (TotalHors / EveryEmployeeWorks);
-        System.out.println("Всего работников в компании " + TotalEmployees + " человек");
-        var MoreEmployees = 94;
-        var EmployeesWithVisitors = (MoreEmployees + TotalEmployees);
-        System.out.println("Теперь в компании работает "+ EmployeesWithVisitors);
-        var DividedBetweenEmployees = (TotalHors / EmployeesWithVisitors);
-        System.out.println("Если в компании работает " + EmployeesWithVisitors + " человек, то всего " + DividedBetweenEmployees + " часа работы может быть поделено между сотрудниками");
+
     }
 }
