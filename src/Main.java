@@ -76,14 +76,14 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
-        var WeighOfOneBoxer = 78.2;
-        System.out.println("Вес первого боксёра " + WeighOfOneBoxer + " кг.");
-        var SecondBoxersWeight = 82.7;
-        System.out.println("Вес вторго боксера " + SecondBoxersWeight + " кг.");
-        var TotalWeightOfFighters = (WeighOfOneBoxer + SecondBoxersWeight);
-        System.out.println("Общий вес бойцов " + TotalWeightOfFighters + " кг.");
-        var WeightDifference = (SecondBoxersWeight - WeighOfOneBoxer);
-        System.out.println("Разница в весе двух бойцов составляет " + WeightDifference + " кг.");
+        var weighOfOneBoxer = 78.2;
+        System.out.println("Вес первого боксёра " + weighOfOneBoxer + " кг.");
+        var secondBoxersWeight = 82.7;
+        System.out.println("Вес вторго боксера " + secondBoxersWeight + " кг.");
+        var totalWeightOfFighters = (weighOfOneBoxer + secondBoxersWeight);
+        System.out.println("Общий вес бойцов " + totalWeightOfFighters + " кг.");
+        var weightDifference = (secondBoxersWeight - weighOfOneBoxer);
+        System.out.println("Разница в весе двух бойцов составляет " + weightDifference + " кг.");
         System.out.println();
     }
 
@@ -100,15 +100,15 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        var TotalHors = 640;
-        var EveryEmployeeWorks = 8;
-        var TotalEmployees = (TotalHors / EveryEmployeeWorks);
-        System.out.println("Всего работников в компании " + TotalEmployees + " человек");
-        var MoreEmployees = 94;
-        var EmployeesWithVisitors = (MoreEmployees + TotalEmployees);
-        System.out.println("Теперь в компании работает " + EmployeesWithVisitors);
-        var DividedBetweenEmployees = (TotalHors / EmployeesWithVisitors);
-        System.out.println("Если в компании работает " + EmployeesWithVisitors + " человек, то всего " + DividedBetweenEmployees + " часа работы может быть поделено между сотрудниками");
+        var totalHors = 640;
+        var everyEmployeeWorks = 8;
+        var totalEmployees = (totalHors / everyEmployeeWorks);
+        System.out.println("Всего работников в компании " + totalEmployees + " человек");
+        var moreEmployees = 94;
+        var employeesWithVisitors = (moreEmployees + totalEmployees);
+        System.out.println("Теперь в компании работает " + employeesWithVisitors);
+        var dividedBetweenEmployees = (totalEmployees / employeesWithVisitors);
+        System.out.println("Если в компании работает " + employeesWithVisitors + " человек, то всего " + dividedBetweenEmployees + " часа работы может быть поделено между сотрудниками");
     }
 
 
