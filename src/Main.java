@@ -49,6 +49,7 @@ public class Main {
         System.out.println(paper);
         System.out.println();
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         var friend = 19;
@@ -59,6 +60,7 @@ public class Main {
         System.out.println(friend);
         System.out.println();
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         var frog = 3.5;
@@ -71,26 +73,28 @@ public class Main {
         System.out.println(frog);
         System.out.println();
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         var WeighOfOneBoxer = 78.2;
         System.out.println("Вес первого боксёра " + WeighOfOneBoxer + " кг.");
         var SecondBoxersWeight = 82.7;
-        System.out.println("Вес вторго боксера " + SecondBoxersWeight +" кг." );
+        System.out.println("Вес вторго боксера " + SecondBoxersWeight + " кг.");
         var TotalWeightOfFighters = (WeighOfOneBoxer + SecondBoxersWeight);
         System.out.println("Общий вес бойцов " + TotalWeightOfFighters + " кг.");
         var WeightDifference = (SecondBoxersWeight - WeighOfOneBoxer);
-        System.out.println("Разница в весе двух бойцов составляет "+ WeightDifference +" кг." );
+        System.out.println("Разница в весе двух бойцов составляет " + WeightDifference + " кг.");
         System.out.println();
     }
+
     public static void task7() {
         System.out.println("Задача 7");
-        var WeightOfOneBoxer = 78.2;
-        var SecondBoxersWeight = 82.7;
-        var TotalWeight = (WeightOfOneBoxer + SecondBoxersWeight);
-        var WeightDifference = (SecondBoxersWeight - WeightOfOneBoxer);
-        var overload = (WeightDifference + TotalWeight) % TotalWeight;
-        System.out.println("Разница в весе двух бойцов составляет " + WeightDifference + " или " + overload);
+        var weightOfOneBoxer = 78.2;
+        var secondBoxersWeight = 82.7;
+        var totalWeight = (weightOfOneBoxer + secondBoxersWeight);
+        var weightDifference = (secondBoxersWeight - weightOfOneBoxer);
+        var overload = (weightDifference + totalWeight) % totalWeight;
+        System.out.println("Разница в весе двух бойцов составляет " + weightDifference + " или " + overload);
         System.out.println();
     }
 
@@ -102,7 +106,7 @@ public class Main {
         System.out.println("Всего работников в компании " + TotalEmployees + " человек");
         var MoreEmployees = 94;
         var EmployeesWithVisitors = (MoreEmployees + TotalEmployees);
-        System.out.println("Теперь в компании работает "+ EmployeesWithVisitors);
+        System.out.println("Теперь в компании работает " + EmployeesWithVisitors);
         var DividedBetweenEmployees = (TotalHors / EmployeesWithVisitors);
         System.out.println("Если в компании работает " + EmployeesWithVisitors + " человек, то всего " + DividedBetweenEmployees + " часа работы может быть поделено между сотрудниками");
     }
