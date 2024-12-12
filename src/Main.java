@@ -110,9 +110,9 @@ public class Main {
         short inDayTwo = 500;
         int resultDay = needLost / inDay;
         System.out.println("При потере " + inDay + "гр потребуется " + resultDay + " дней");
-        int ResultDayTwo = needLost / inDayTwo;
-        System.out.println("При потере " + inDayTwo + "гр потребуется " + ResultDayTwo + " дней");
-        int OnAverageDay = (resultDay + ResultDayTwo) / 2;
+        int resultDayTwo = needLost / inDayTwo;
+        System.out.println("При потере " + inDayTwo + "гр потребуется " + resultDayTwo + " дней");
+        int OnAverageDay = (resultDay + resultDayTwo) / 2;
         System.out.println("В среднем потребуется " + OnAverageDay + " дней для похудения");
         System.out.println();
     }
