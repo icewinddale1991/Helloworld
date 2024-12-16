@@ -26,8 +26,7 @@ public class Main {
         int temperature = 18;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов нужно надеть шапку");
-        }
-        if (temperature > 5) {
+        } else {
             System.out.println("На улице " + temperature + " градусов можно идти без шапки");
         }
         System.out.println();
@@ -38,8 +37,7 @@ public class Main {
         int speed = 45;
         if (speed >60) {
             System.out.println("Если скорость " + speed + " то придется заплатить штраф");
-        }
-        else {
+        } else {
             System.out.println("Если скорость " + speed + " можно ездить спокойно");
         }
         System.out.println();
@@ -47,17 +45,16 @@ public class Main {
 
     public static void taskFour() {
         System.out.println("Задача 4");
-        int age =21;
+        int age =23;
         if (age >=2 && age <=6) {
             System.out.println("Если возраст человека равен " + age + " то ему можно ходить в детский сад");
         }
-        else if (age >=7 && age <=18) {
+        else if (age >=7 && age ==18) {
             System.out.println("Если возраст человека равен " + age+ " то ему можно ходить в школу");
         }
-        if (age >18 && age <24) {
+        if (age>18 && age <=24) {
             System.out.println("Если возраст человека равен " + age + " тоему нужно ходить в университет");
-        }
-         else {
+        } else if ( age >24 ) {
             System.out.println("Если возраст человека равен " + age + " то ему нужно хождить на работу");
         }
         System.out.println();
@@ -71,8 +68,7 @@ public class Main {
         }
         else if (ageChild >5  && ageChild<14) {
             System.out.println("Если возраст ребёнка равен " + ageChild + " Можно кататься на аттракционе в сопровождении взрослого");
-        }
-        else {
+        } else {
             System.out.println("Если возраст ребёнка равен " +ageChild+ " можно кататься на аттракционе без сопровождения взрослого");
         }
         System.out.println();
@@ -88,8 +84,7 @@ public class Main {
         }
         if (carrigeCapacity > 60 && carrigeCapacity <102) {
         System.out.println("В вагоне остались стоячие места");
-        }
-        else if (carrigeCapacity >=102 ) {
+        } else if (carrigeCapacity >=102 ) {
             System.out.println("Вагон полностью забит");
         }
         System.out.println();
@@ -105,8 +100,7 @@ public class Main {
         }
         if (two > one && two > three && two != one && two != three)  {
             System.out.println("two наибольшее число");
-        }
-         else if (three > one && three > two &&three != one && three != two) {
+        } else if (three > one && three > two &&three != one && three != two) {
             System.out.println("three наибольшее число");
         }
 
