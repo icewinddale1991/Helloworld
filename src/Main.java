@@ -81,29 +81,35 @@ public class Main {
 
     public static void taskSix() {
         System.out.println("Задача 6");
-        int carrigeCapacity = 60;
+        int carrigeCapacity = 1;
         ;
-        if (carrigeCapacity >=102) {
-            System.out.println("Вагон полностью забит");
-        }
-        else if (carrigeCapacity > 0 && carrigeCapacity <60) {
+        if (carrigeCapacity <=60) {
             System.out.println("В вагоне есть сидячие места");
         }
-        if (carrigeCapacity >60 && carrigeCapacity<102) {
-            System.out.println("В вагоне остались стоячие места");
+        if (carrigeCapacity > 60 && carrigeCapacity <102) {
+        System.out.println("В вагоне остались стоячие места");
         }
+        else if (carrigeCapacity >=102 ) {
+            System.out.println("Вагон полностью забит");
+        }
+        System.out.println();
     }
-
-
-
 
     public static void taskSeven() {
         System.out.println("Задача 7");
+        int one = 1;
+        int two =2;
+        int three =3;
+        if (one > two && one > three && one!= two && one != three ) {
+            System.out.println("One наибольшее число");
+        }
+        if (two > one && two > three && two != one && two != three)  {
+            System.out.println("two наибольшее число");
+        }
+         else if (three > one && three > two &&three != one && three != two) {
+            System.out.println("three наибольшее число");
+        }
 
     }
 
-    public static void taskEight() {
-        System.out.println("Задача 8");
-
-    }
 }
