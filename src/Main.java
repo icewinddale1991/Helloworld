@@ -12,37 +12,35 @@ public class Main {
 
     public static void taskOne() {
         System.out.println("Задача 1");
-        int clientOC = 0;
-        if (clientOC == 0 && clientOC < 1) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+        for (int i = 1; i < 10; i = i + 1) {
+            System.out.println( "Итерация цикла " +i);
         }
-
         System.out.println();
     }
 
     public static void taskTwo() {
-        System.out.println("Задача 2");
-        int clientOC = 54;
-        if (clientOC == 0 && clientOC < 1) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+        System.out.println("Задача 2");{
+            for (int i = 10; i >0; i = i - 1) {
+            System.out.println("Итерация цикла " +i);
+            }
         }
-
-
         System.out.println();
     }
 
     public static void taskThree() {
         System.out.println("Задача 3");
+        for (int i = 0; i < 17; i = i + 2) {
+            System.out.println("Итерация цикла " + i);
+        }
 
         System.out.println();
     }
 
     public static void taskFour() {
         System.out.println("Задача 4");
+        for (int i = 10; i >=-10; i = i - 1) {
+            System.out.println("Итерация цикла " + i);
+        }
 
         System.out.println();
     }
