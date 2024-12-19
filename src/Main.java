@@ -51,5 +51,13 @@ public class Main {
         System.out.println();
 
     }
+    public static void taskSix() {
+        System.out.println("Задача 6");
+
+        System.out.println();
+    }
 }
+
+
+
 
