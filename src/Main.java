@@ -12,7 +12,7 @@ public class Main {
 
     public static void taskOne() {
         System.out.println("Задача 1");
-        int clientOC = 54;
+        int clientOC = 0;
         if (clientOC == 0 && clientOC < 1) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
