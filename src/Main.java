@@ -12,10 +12,10 @@ public class Main {
 
     public static void taskOne() {
         System.out.println("Задача 1");
-        int clientOC = 0;
-        if (clientOC == 0) {
+        int clientOS = 0;
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOC == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
@@ -25,15 +25,15 @@ public class Main {
     public static void taskTwo() {
         System.out.println("Задача 2");
         int clientOC = 0;
-        int year = 1987;
-        if (clientOC == 0 && year >= 2015) {
+        int clientDeviceYear = 1987;
+        if (clientOC == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOC == 0 && year < 2015) {
+        } else if (clientOC == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
-        if (clientOC == 1 && year >= 2015) {
+        if (clientOC == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (clientOC == 1 && year < 2015) {
+        } else if (clientOC == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         System.out.println();
