@@ -11,34 +11,47 @@ public class Main {
         taskSix();
         taskSeven();
         taskEight();
-        taskNine();
-        taskTen();
 
 
     }
 
     public static void taskOne() {
         System.out.println("Задача 1");
-        for (int i = 1; i < 10; i = i + 1) {
-            System.out.println("Итерация цикла " + i);
+        int invested = 15000;
+        int total = 0;
+        int i = 0;
+        while (total < 2_459_000) {
+            total = total + invested;
+            i++;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total);
         }
         System.out.println();
     }
 
     public static void taskTwo() {
         System.out.println("Задача 2");
-        {
-            for (int i = 10; i > 0; i = i - 1) {
-                System.out.println("Итерация цикла " + i);
-            }
+        int i = 1;
+        int start = 0;
+        while (start < 10) {
+            start = start + i;
+            System.out.print(start + " ");
         }
+        System.out.println();
+        for (i = 10; i > 0; i--) {
+            System.out.print(i + " ");
+        }
+
         System.out.println();
     }
 
     public static void taskThree() {
         System.out.println("Задача 3");
-        for (int i = 0; i < 17; i = i + 2) {
-            System.out.println("Итерация цикла " + i);
+        int population = 12_000_000;
+        int fertility = 17;
+        int mortalyty = 8;
+        for (int year = 1; year <= 10; year++) {
+            population = population + population * 17 / 1000 - mortalyty * 8 / 1000;
+            System.out.println("Год " + year + " население составит " + population);
         }
 
         System.out.println();
@@ -46,67 +59,53 @@ public class Main {
 
     public static void taskFour() {
         System.out.println("Задача 4");
-        for (int i = 10; i >= -10; i = i - 1) {
-            System.out.println("Итерация цикла " + i);
+        int startCapital = 15000;
+        int total = 0;
+        for (int month =1; total <= 12_000_000; month++) {
+            total = total + startCapital *7 / 100;
+            total = total + startCapital;
+            System.out.println("Месяц " + month + " сумма " + total);
         }
         System.out.println();
     }
 
     public static void taskFive() {
         System.out.println("Задача 5");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным");
+        int startCapital = 15000;
+        int total = 0;
+        for (int month =1; total <= 12_000_000; month++ ) {
+            total = total + startCapital *7 / 100;
+            total = total + startCapital;
+            if (month %6==0)
+            System.out.println("Месяц " + month + " сумма " + total);
         }
+        System.out.println();
 
     }
 
     public static void taskSix() {
         System.out.println("Задача 6");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.println(i);
-        }
+        int months = 0;
+        int total = 0;
+        int year = 9;
+        int startCapital = 15000;
+
+
+
+
 
     }
 
     public static void taskSeven() {
         System.out.println("Задача 7");
-        for (int i = 1; i <= 512; i = i * 2) {
-            System.out.println(i);
-        }
+
 
     }
 
     public static void taskEight() {
         System.out.println("Задача 8");
-        int postponed = 29900;
-        int total = 0;
-        for (int i = 1; i <= 12; i++) {
-            total = total + postponed;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
-        }
+
         System.out.println();
 
     }
-
-    public static void taskNine() {
-        System.out.println("Задача 9");
-        int postponed = 29900;
-        int total = 0;
-        for (int i = 1; i <= 12; i++) {
-            total = total + total / 100;
-            total = total + postponed;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
-        }
-        System.out.println();
-
-    }
-
-    public static void taskTen() {
-        System.out.println("Задача 10");
-        for (int i = 1; i <=10; i++) {
-            System.out.println(" 2* " +i+ " = " +2*i);
-        }
-
-    }
-
 }
