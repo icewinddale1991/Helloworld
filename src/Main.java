@@ -17,15 +17,16 @@ public class Main {
 
     public static void taskOne() {
         System.out.println("Задача 1");
-        int invested = 15000;
-        int total = 0;
-        int i = 0;
-        while (total < 2_459_000) {
-            total = total + invested;
-            i++;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total);
+        int desiredSum = 2_459_000;
+        int sum = 0;
+        int amount = 15000;
+        int month = 0;
+        while (sum < desiredSum) {
+            sum += amount;
+            month++;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + sum);
         }
-        System.out.println();
+
     }
 
     public static void taskTwo() {
@@ -49,9 +50,10 @@ public class Main {
         int population = 12_000_000;
         int fertility = 17;
         int mortalyty = 8;
-        for (int year = 1; year <= 10; year++) {
-            population = population + population * 17 / 1000 - mortalyty * 8 / 1000;
-            System.out.println("Год " + year + " население составит " + population);
+        int currenYear = 2024;
+        for (int year = currenYear; year < currenYear + 10; year++) {
+            population += population * fertility / 1000 - population * mortalyty / 1000;
+            System.out.println("Год " + year + ", население составит " + population);
         }
 
         System.out.println();
@@ -59,25 +61,30 @@ public class Main {
 
     public static void taskFour() {
         System.out.println("Задача 4");
-        int startCapital = 15000;
-        int total = 0;
-        for (int month =1; total <= 12_000_000; month++) {
-            total = total + startCapital *7 / 100;
-            total = total + startCapital;
-            System.out.println("Месяц " + month + " сумма " + total);
+        int desiredSum = 12_000_000;
+        int dep = 15000;
+        double precent = 7D / 100;
+        int month = 0;
+        while (dep < desiredSum) {
+            dep = (int) (dep * (1 + precent));
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений составила " + dep);
         }
         System.out.println();
     }
 
     public static void taskFive() {
         System.out.println("Задача 5");
-        int startCapital = 15000;
-        int total = 0;
-        for (int month =1; total <= 12_000_000; month++ ) {
-            total = total + startCapital *7 / 100;
-            total = total + startCapital;
-            if (month %6==0)
-            System.out.println("Месяц " + month + " сумма " + total);
+        int desiredSum = 12_000_000;
+        int dep = 15000;
+        double precent = 7D / 100;
+        int month = 0;
+        while (dep < desiredSum) {
+            dep = (int) (dep * (1 + precent));
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений составила " + dep);
+            }
         }
         System.out.println();
 
@@ -85,19 +92,26 @@ public class Main {
 
     public static void taskSix() {
         System.out.println("Задача 6");
-        int months = 0;
-        int total = 0;
-        int year = 9;
-        int startCapital = 15000;
+        int months = 12 * 9;
+        int dep = 15000;
+        double precent = 7D / 100;
+        int month = 0;
+        while (month < months) {
+            dep = (int) (dep * (1 + precent));
+            month++;
 
-
-
-
+            System.out.println("Месяц " + month + ", сумма накоплений составила " + dep);
+        }
 
     }
 
     public static void taskSeven() {
         System.out.println("Задача 7");
+        int day = 1;
+        int friday = 0;
+        for (friday = day; day < friday + 31; day++);
+        if (friday % 8 == 0) ;
+        System.out.println("Сегодня пятница " +friday+ "число  отчеты");
 
 
     }
