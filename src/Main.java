@@ -1,3 +1,5 @@
+import java.time.Year;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -107,17 +109,26 @@ public class Main {
 
     public static void taskSeven() {
         System.out.println("Задача 7");
-        int day = 1;
-        int friday = 0;
-        for (friday = day; day < friday + 31; day++);
-        if (friday % 8 == 0) ;
-        System.out.println("Сегодня пятница " +friday+ "число  отчеты");
+        int friday = 5;
+        while (friday <= 31) {
+            System.out.println("Сегодня пятница " + friday + "е число, Нужно подготовить отчеты");
+            friday += 7;
+        }
 
 
     }
 
     public static void taskEight() {
         System.out.println("Задача 8");
+        int currentYar = 2024;
+        int period = 79;
+        int startYear = 0;
+        int starSeeing = currentYar - 200;
+        int endSeeing = currentYar + 100;
+        for (int year = startYear; year < endSeeing; year += period) {
+            if (year > starSeeing)
+                System.out.println(year);
+        }
 
         System.out.println();
 
