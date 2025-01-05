@@ -101,8 +101,8 @@ public class Main {
         while (month < months) {
             dep = (int) (dep * (1 + precent));
             month++;
-
-            System.out.println("Месяц " + month + ", сумма накоплений составила " + dep);
+            if (month % 6 == 0)
+                System.out.println("Месяц " + month + ", сумма накоплений составила " + dep);
         }
 
     }
@@ -111,7 +111,7 @@ public class Main {
         System.out.println("Задача 7");
         int friday = 5;
         while (friday <= 31) {
-            System.out.println("Сегодня пятница " + friday + "е число, Нужно подготовить отчеты");
+            System.out.println("Сегодня пятница, " + friday + "е число. Необходимо подготовить отчет");
             friday += 7;
         }
 
